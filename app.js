@@ -1,6 +1,6 @@
 require('dotenv').config();
 const express = require('express');
-const controller = require('./src/main/controllers/controller')
+const weatherController = require('./src/main/controllers/Weather/weatherController')
 const app = express();
 const {debuglog} = require('./src/main/util/debugCommands');
 const ENV = process.env.ENV;
@@ -42,7 +42,7 @@ app.get('/', (req, res) =>{
     res.send("Hello World!");
 })
 
-app.use('/controller', controller)
+app.use('/weather', weatherController)
 
 
 module.exports = app;
