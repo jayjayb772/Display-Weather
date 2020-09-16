@@ -99,13 +99,13 @@ function sortWeekForecast(list){
       if(desc === "Clouds"){
         curDay[0].color = "#7e7e7e"
       }else if(desc === "Clear"){
-        curDay[0].color = "#fffd00"
+        curDay[0].color = "#0596f5"
       }else if(desc.contains('Rain')){
-        curDay[0].color = "#2b75ff"
+        curDay[0].color = "#131f37"
       }else if(desc.contains('Snow')){
-        curDay[0].color = "#000094"
+        curDay[0].color = "#ffffff"
       }else{
-        curDay[0].color = "#ff3100"
+        curDay[0].color = "#ff0000"
       }
 
       forecasts.push(curDay[0])
