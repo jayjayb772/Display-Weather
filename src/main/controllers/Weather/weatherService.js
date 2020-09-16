@@ -96,13 +96,13 @@ function sortWeekForecast(list){
       curDay[0].max_temp = maxTemp;
       curDay[0].min_temp = minTemp;
       curDay[0].forecast = desc;
-      if(desc.contains('clouds')){
+      if(desc === "Clouds"){
         curDay[0].color = "#7e7e7e"
-      }else if(desc.contains('sun')){
+      }else if(desc === "Clear"){
         curDay[0].color = "#fffd00"
-      }else if(desc.contains('rain')){
+      }else if(desc.contains('Rain')){
         curDay[0].color = "#2b75ff"
-      }else if(desc.contains('snow')){
+      }else if(desc.contains('Snow')){
         curDay[0].color = "#000094"
       }else{
         curDay[0].color = "#ff3100"
