@@ -98,6 +98,7 @@ function sortWeekForecast(list){
       curDay[0].forecast = desc;
       if(desc === "Clouds"){
         curDay[0].color = "#7e7e7e"
+        curDay[0].forecast = "Cloudy"
       }else if(desc === "Clear"){
         curDay[0].color = "#0596f5"
       }else if(desc.contains('Rain')){
