@@ -9,7 +9,11 @@ I'm using digital ocean droplets though!
 Because I never found a display board with enough customizability for me. Also I wanted to make a microservice based API on my own and I never really had the chance to learn react
 
 [Orchestrator](https://github.com/jayjayb772/Display-orchestrator)
+
 [CTAPI](https://github.com/jayjayb772/Display-CTAPI)
+
 [WeatherAPI](https://github.com/jayjayb772/Display-Weather)
+
 [DiscordBot](https://github.com/jayjayb772/1925-discord-bot)
+
 
