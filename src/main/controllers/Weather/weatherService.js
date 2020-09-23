@@ -73,48 +73,49 @@ function makeWeekResponse(body){
   return sortWeekForecast(tempList);
 }
 
-function sortWeekForecast(list){
+function sortWeekForecast(listOfForecasts){
   let daysList=[];
-  let lastDate = list[0].forecast_date
-  let curDay=[{"forecast_date":lastDate}];
+  let lastDate = listOfForecasts[0].forecast_date
+  let curDay={"forecast_date":lastDate};
   let forecasts = []
-  list.forEach(forecast=>{
+  listOfForecasts.forEach(forecast=>{
     if(lastDate === forecast.forecast_date){
-      curDay.push(forecast);
+      daysList.push(forecast);
     }else{
       let maxTemp=forecast.temp_forecast;
       let minTemp=forecast.temp_forecast;
       let desc = forecast.forecast
-      curDay.forEach(section=>{
-        if(section.temp_forecast > maxTemp){
-          maxTemp = section.temp_forecast;
+      daysList.forEach(givenDayForecast=>{
+        if(givenDayForecast.temp_forecast > maxTemp){
+          maxTemp = givenDayForecast.temp_forecast;
         }
-        if(section.temp_forecast < minTemp){
-          minTemp = section.temp_forecast;
+        if(givenDayForecast.temp_forecast < minTemp){
+          minTemp = givenDayForecast.temp_forecast;
         }
       })
-      curDay[0].max_temp = maxTemp;
-      curDay[0].min_temp = minTemp;
-      curDay[0].forecast = desc;
+      curDay.max_temp = maxTemp;
+      curDay.min_temp = minTemp;
+      curDay.forecast = desc;
       if(desc === "Clouds"){
-        curDay[0].color = "#7e7e7e"
-        curDay[0].forecast = "Cloudy"
+        curDay.color = "#7e7e7e"
+        curDay.forecast = "Cloudy"
       }else if(desc === "Clear"){
-        curDay[0].color = "#0596f5"
-      }else if(desc.contains('Rain')){
-        curDay[0].color = "#131f37"
-      }else if(desc.contains('Snow')){
-        curDay[0].color = "#ffffff"
+        curDay.color = "#0596f5"
+      }else if(desc === 'Rain'){
+        curDay.color = "#131f37"
+      }else if(desc === 'Snow'){
+        curDay.color = "#ffffff"
       }else{
-        curDay[0].color = "#ff0000"
+        curDay.color = "#ff0000"
       }
 
-      forecasts.push(curDay[0])
-      daysList.push(curDay);
-      curDay = [];
+      curDay.forecast_all = daysList;
+      forecasts.push(curDay)
+
       lastDate = forecast.forecast_date;
-      curDay.push({"forecast_date":lastDate})
-      curDay.push(forecast)
+      curDay= {"forecast_date":lastDate}
+      daysList = [];
+      daysList.push(forecast)
     }
   })
   return forecasts;
