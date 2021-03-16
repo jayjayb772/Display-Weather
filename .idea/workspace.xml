@@ -19,7 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="64ebb2c1-1be7-408f-b5c4-b4c71f2622cd" name="Default Changelist" comment="" />
+    <list default="true" id="64ebb2c1-1be7-408f-b5c4-b4c71f2622cd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/wwwWeather" beforeDir="false" afterPath="$PROJECT_DIR$/bin/wwwWeather" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,6 +41,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="HTML" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -61,6 +67,16 @@
       <workItem from="1600469005622" duration="1964000" />
       <workItem from="1600709803392" duration="5000" />
       <workItem from="1600868701404" duration="3172000" />
+      <workItem from="1600881308680" duration="618000" />
+      <workItem from="1611291898674" duration="945000" />
+      <workItem from="1611341562685" duration="1034000" />
+      <workItem from="1612397206958" duration="1200000" />
+      <workItem from="1612467736721" duration="12552000" />
+      <workItem from="1612805586804" duration="27000" />
+      <workItem from="1612805999583" duration="4000" />
+      <workItem from="1612903130013" duration="9000" />
+      <workItem from="1612921173884" duration="1232000" />
+      <workItem from="1612970323053" duration="13000" />
     </task>
     <servers />
   </component>
@@ -80,9 +96,9 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600868777731">
+    <state x="1147" y="256" width="585" height="534" key="find.popup" timestamp="1611341994108">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600868777731" />
+    <state x="1147" y="256" width="585" height="534" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1611341994108" />
   </component>
 </project>
